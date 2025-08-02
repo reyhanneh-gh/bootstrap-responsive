@@ -1,0 +1,405 @@
+:root {
+    --favcolor: rgb(53, 170, 203);
+}
+
+nav {
+    background-color: rgb(37, 36, 36);
+    position: fixed;
+    z-index: 10;
+
+    .logo {
+
+        >figure {
+            width: 50px;
+
+            >img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        >h2 {
+            color: white;
+
+        }
+    }
+
+    >ul {
+        li {
+            cursor: pointer;
+            color: white;
+            position: relative;
+            transition: .4s;
+
+            &:nth-of-type(2) {
+                color: var(--favcolor);
+            }
+
+            >a {
+                text-decoration: none;
+                color: white;
+                font-size: 25px;
+                transition: .4s;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 1px;
+                background-color: var(--favcolor);
+                opacity: 0;
+                transition: .4s;
+            }
+
+            &:hover {
+                color: rgb(53, 170, 203);
+
+                &::after {
+                    opacity: 1;
+                    width: 100%;
+                }
+
+                &:nth-of-type(1) {
+                    &::after {
+                        opacity: 0;
+                    }
+                }
+
+                >a {
+                    color: var(--favcolor);
+                }
+            }
+        }
+    }
+
+    >div {
+
+
+        >a {
+            background-image: linear-gradient(to right, blueviolet, rgb(53, 170, 203), purple);
+            border: 1px solid rgb(37, 36, 36);
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: .4s;
+
+            &:hover {
+                background-image: none;
+                border: 1px solid var(--favcolor);
+                color: var(--favcolor);
+            }
+        }
+    }
+}
+
+#slide1 {
+    background-color: rgb(37, 36, 36);
+
+    >header {
+        margin-top: 100px;
+
+        >* {
+            color: white;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        >h2 {
+            color: rgb(92, 92, 92);
+        }
+
+        >h1 {}
+
+        >div {
+            margin-top: 20px;
+
+            >a {
+                text-decoration: none;
+                border-radius: 30px;
+                transition: .4s;
+                padding-block: 10px;
+                color: white;
+
+                &:nth-of-type(1) {
+                    background-image: linear-gradient(to right, blueviolet, rgb(53, 170, 203), purple);
+                    border: 1px solid rgb(37, 36, 36);
+
+                    &:hover {
+                        background-image: none;
+                        border: 1px solid var(--favcolor);
+                        color: var(--favcolor);
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    border: 1px solid var(--favcolor);
+                    color: var(--favcolor);
+
+                    &:hover {
+                        background-image: linear-gradient(to right, blueviolet, rgb(53, 170, 203), purple);
+                        border: 1px solid rgb(37, 36, 36);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    figure {
+        video {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+}
+
+#slide2 {
+    >div {
+
+        >h2 {
+            text-align: center;
+        }
+
+        >div {
+            .circle {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-image: radial-gradient(rgb(53, 170, 203), blueviolet);
+                color: white;
+                font-size: 20px;
+
+            }
+        }
+    }
+}
+
+#slide3 {
+    background-color: rgb(235, 235, 235);
+
+    >div {
+
+        >h2 {
+            text-align: center;
+        }
+
+        >div {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(86, 86, 86, 0.379);
+            border-radius: 10px;
+
+            .circle {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-image: radial-gradient(rgb(53, 170, 203), blueviolet);
+                color: white;
+                font-size: 20px;
+
+            }
+        }
+    }
+}
+
+#slide4 {
+    >div {
+
+        >h2 {
+            text-align: center;
+        }
+
+        >p {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.462);
+        }
+
+        >div {
+            >figure {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+
+                >img {
+                    object-fit: cover;
+                }
+
+            }
+
+            >h3 {
+                text-align: center;
+                color: rgba(37, 36, 36);
+            }
+
+            >p {
+                text-align: center;
+                color: rgba(0, 0, 0, 0.462);
+            }
+        }
+    }
+}
+
+#slide5 {
+    background-color: rgb(235, 235, 235);
+
+    >div {
+        >h2 {
+            text-align: center;
+        }
+
+        >p {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.462);
+        }
+
+        >div {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(86, 86, 86, 0.379);
+            border-radius: 10px;
+            transition: .4s;
+
+            &:hover {
+                background-color: rgb(37, 36, 36);
+
+                >h3 {
+                    color: white;
+                }
+
+                >ul {
+                    >li {
+                        color: rgba(255, 255, 255, 0.442);
+                    }
+                }
+
+                >a {
+                    border: 1px solid rgb(37, 36, 36);
+                }
+            }
+
+            >p {
+                color: var(--favcolor)
+            }
+
+            >ul {
+                >li {
+                    color: rgba(0, 0, 0, 0.462);
+                }
+            }
+
+            >a {
+                text-decoration: none;
+                border-radius: 30px;
+                transition: .4s;
+                padding-block: 10px;
+                color: white;
+                background-image: linear-gradient(to right, blueviolet, rgb(53, 170, 203), purple);
+                border: 1px solid white;
+
+                &:hover {
+                    background-image: none;
+                    border: 1px solid var(--favcolor);
+                    color: var(--favcolor);
+                }
+            }
+        }
+    }
+}
+
+#slide6 {
+
+    >h2 {
+        text-align: center;
+    }
+
+    #carouselExampleRide {
+        .carousel-inner {
+            .carousel-item {
+                .box {
+                    background-color: rgb(235, 235, 235);
+                    box-shadow: 0 0 10px rgba(86, 86, 86, 0.379);
+                    border-radius: 10px;
+
+                    >div {
+                        >figure {
+                            >img {
+                                object-fit: cover;
+                            }
+                        }
+
+                        >p {}
+                    }
+
+                    >p {
+                        color: rgb(92, 92, 92);
+                    }
+
+                    >span {}
+                }
+
+            }
+        }
+    }
+}
+
+footer {
+    background-color: rgb(37, 36, 36);
+
+    >div {
+        .logo {
+            >figure {
+                width: 50px;
+
+                >img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            >h2 {
+                color: white;
+            }
+        }
+
+        >h5 {
+            text-align: center;
+            color: white;
+        }
+
+        >p {
+            color: rgba(255, 255, 255, 0.442);
+        }
+
+        ul {
+            li {
+                cursor: pointer;
+                transition: .4s;
+                color: rgba(255, 255, 255, 0.442);
+
+                &:hover {
+                    color: var(--favcolor);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &:nth-of-type(1) {
+            >ul {
+                li {
+                    color: var(--favcolor);
+
+                    &:hover {
+                        color: white;
+                        text-decoration: none;
+                        scale: 1.05;
+                    }
+                }
+            }
+        }
+    }
+}
