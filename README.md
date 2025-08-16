@@ -2,7 +2,7 @@
 
 A sleek and modern web layout built using **Bootstrap** to practice responsive design principles. This project serves as a learning sandbox to explore grid systems, components, and flexible UI development.
 
-🔗 [Live Demo](https://darling-selkie-6b97da.netlify.app/) 🚀
+🔗 [Live Demo](https://darling-selkie-6b97da.netlify.app/) 🪄
 
 ## ✨ Features
 - Mobile-first responsive layout
